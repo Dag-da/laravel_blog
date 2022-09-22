@@ -1,0 +1,185 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --dark: hsl(0, 0%, 0%);
+    --light: hsl(0, 0%, 100%);
+}
+
+* {
+    font-style: inherit;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    color: var(--dark);
+    background-color: hsl(0, 0%, 95%);
+}
+
+.wrapper-header {
+    text-align: center;
+    padding-block: 3rem;
+    background-color: var(--light);
+}
+
+.wrapper-header h1 {
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-block-end: .5rem;
+}
+
+.wrapper-header em span {
+    background-color: var(--dark);
+    color: var(--light);
+    padding-inline: .5rem;
+}
+
+.wrapper-hero {
+    background-image: url("../../public/img/jane.jpeg");
+    background-size: cover;
+    padding-block: 5rem;
+    padding-inline-start: 1.3rem;
+    min-height: 16rem;
+}
+
+.wrapper-hero h2 {
+    color: var(--light);
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: .2rem;
+    margin-block-end: .5rem;
+}
+
+.wrapper-hero button {
+    padding-inline: 1rem;
+    padding-block: .6rem;
+    background-color: hsla(0, 0%, 100%, 70%);
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.wrapper {
+    max-width: 90%;
+    margin-inline: auto;
+    margin-block: 1rem;
+}
+
+.wrapper-blog-card {
+    padding: 1rem;
+    background-color: var(--light);
+    margin-block: 1rem;
+}
+
+.card-title {
+    text-align: center;
+    display: inline;
+}
+
+.wrapper-blog-card h2 {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-block-end: .5rem;
+}
+
+.wrapper-blog-card_subtitle {
+    font-weight: 600;
+}
+
+.wrapper-blog-card_subtitle span {
+    color: hsl(0, 0%, 50%);
+}
+
+.wrapper-blog-card img {
+    margin-block: 1.5rem;
+}
+
+.wrapper-blog-card img + p :first-child {
+    font-weight: 600;
+}
+
+.like-button {
+    line-height: 1;
+    font-weight: 500;
+    padding-inline: 1rem;
+    padding-block: .5rem;
+    border: 1px solid hsl(0, 0%, 75%);
+}
+
+.replies-button {
+    display: flex;
+    align-items: center;
+    line-height: 1;
+    padding-inline: 1rem;
+    padding-block: .3rem;
+    letter-spacing: .1rem;
+    color: var(--light);
+    background-color: var(--dark);
+}
+
+.replies-button div {
+    background-color: var(--light);
+    color: var(--dark);
+    margin-inline-start: .6rem;
+    padding-inline: .5rem;
+    padding-block: .3rem;
+    font-size: .8rem;
+}
+
+.post-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-block: 2rem;
+}
+
+.comment-post {
+    margin-block-start: 3rem;
+    border-top: 1px solid hsl(0, 0%, 90%);
+}
+
+.comment-post img {
+    width: 5rem;
+    margin-block: 1rem;
+}
+
+.comment-post .wrapper-blog-card_subtitle {
+    margin-block-end: 1rem;
+}
+
+.who-block {
+    max-width: 90%;
+    /* margin-block: 2rem; */
+    margin-inline: auto;
+    background-size: cover;
+    background-color: var(--dark);
+    filter: grayscale(100%);
+    /* background-color: aqua; */
+    min-height: 10rem;
+    width: 100%;
+}
+.who-block img {
+    width: 100%;
+}
+
+.who-text {
+    color:hsl(0, 0%, 50%);
+    padding: 1rem;
+}
+
+.who-text p {
+    margin-block-start: 1rem;
+    font-size: .9rem;
+    font-weight: 300;
+}
+
+.wrapper-sidebar_block {
+    background-color: var(--light);
+}
+
+.sidebar_block_title {
+    padding: 1rem;
+    background-color: var(--dark);
+    color: var(--light);
+}
